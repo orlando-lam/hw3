@@ -2,19 +2,19 @@
 
 <%= form_with :model => @place do |form| %>
   <p>
-    <%= form.label "title", "Title" %>
+    <%= form.label "Title" %>
     <%= form.text_field "title" %>
   </p>
   <p>
-    <%= form.label "description", "Description" %>
+    <%= form.label "Description" %>
     <%= form.text_field "description" %>
   </p>
   <p>
-    <%= form.label "posted_on", "Date" %>
+    <%= form.label "Date" %>
     <%= form.date_field "posted_on" %>
   </p>
   <p>
-    <%= form.hidden_field "post_id" %>
+    <%= form.hidden_field "place_id" %>
   </p>
   <%= form.submit %>
 <% end %>
